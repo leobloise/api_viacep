@@ -86,7 +86,7 @@ class CEPController  {
                     if(data.erro) {
                     
                         return res.status(404).json({
-                            cep: `O cep ${cep} não foi encontrado ou não existe`
+                            error: `O cep ${cep} não foi encontrado ou não existe`
                         })
                     
                     }
@@ -114,7 +114,7 @@ class CEPController  {
                     
                     return res.status(500)
                     .json({
-                        msg: 'Houve um erro interno. Por favor, contate o adm'
+                        error: 'Houve um erro interno. Por favor, contate o adm'
                     })
                 
                 }
